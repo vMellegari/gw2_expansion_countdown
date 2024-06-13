@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/logo.png" alt="Logo">
+            <p class="hero__text">
+                A expansão Janthir Wilds <span id="contador"></span>
+            </p>
+            <div class="infos-bar">
+                <a href="#" class="infos-bar__button" id="openModalLink">
+                    Assista ao trailer
+                    </a>
+                    <div class="modal" id="videoModal">
+                        <span class="modal__close">&times;</span>
+                        <div class="modal__content">
+                            <div class="modal__video-container">
+                                <iframe class="modal__video" src="https://www.youtube.com/embed/EK3DCrUtjNU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://buy.guildwars2.com/en-us/janthir-wilds?tab=0" target="_blank" class="infos-bar__button">
+                        Compre agora
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="new new--wild">
+        <div class="container" data-aos="flip-right">
+            <div class="new__details">
+                <h2 class="new__details__title new__details__title--wild">NA SELVA</h2>
+                <p class="new__details__description">
+                    Vá para o norte, para a região selvagem de Janthir, na mais recente expansão de Guild Wars 2®! Acontecimentos importantes recentes deixaram os habitantes de Tyria determinados a se recuperar e construir um novo futuro juntos. Sabendo que a cooperação com os vizinhos será crucial para seu sucesso a longo prazo, seus aliados enviam você para fazer amizade com o kodan das terras baixas de Janthir - uma terra perigosa que já foi o lar dos estranhos mursaat e seus bajuladores do Manto Branco na época da Guilda original. Guerras®.
+                </p>
+            </div>
+            <img class="new__image" src="./images/Into_01.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="new new--home new--image-left">
+        <div class="container" data-aos="flip-left">
+            <div class="new__details">
+                <h2 class="new__details__title">LAR DOCE LAR</h2>
+                <p class="new__details__description">
+                    Suas jornadas o levarão à sua própria propriedade, uma instância de habitação pessoal para toda a conta para você desenvolver à medida que completa o domínio associado. As herdades apresentam uma área de terreno e uma estrutura permanente para cultivar, decorar e partilhar com os seus amigos; você também pode acessar nós e desbloqueios adquiridos para sua instância de história pessoal em sua propriedade. Antes do lançamento, em 20 de agosto, voltaremos para compartilhar muito mais informações e dar uma olhada na decoração de Homesteads.
+                </p>
+            </div>
+            <img class="new__image" src="./images/Home_01.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="new new--spear">
+        <div class="container" data-aos="flip-right">
+            <div class="new__details">
+                <h2 class="new__details__title">LANÇAS: NOVA ARMA PARA TODAS AS PROFISSÕES</h2>
+                <p class="new__details__description">
+                    Aprenda os segredos da lança com o kodan das terras baixas! As lanças, que antes eram usadas apenas em combate subaquático, agora terão habilidades totalmente novas para cada profissão em terra. Algumas profissões empunham lanças como formidáveis ​​armas corpo a corpo, enquanto outras as arremessam à distância com uma precisão devastadora. As lanças podem ser usadas alternadamente nos slots de armas aquáticas e terrestres, mas você precisará equipar várias lanças para usá-las em ambos os locais. Um dos lançamentos pós-lançamento também apresentará uma nova lança lendária para aquisição.
+                </p>
+            </div>
+            <img class="new__image" src="./images/Spear_01.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="new new--encounter new--image-left">
+        <div class="container" data-aos="flip-left">
+            <div class="new__details">
+                <h2 class="new__details__title">RAIDS E ENCONTROS</h2>
+                <p class="new__details__description">
+                    Encontros desafiadores adicionais estarão disponíveis junto com novos capítulos da história nos três principais lançamentos que se seguem a Guild Wars 2: Janthir Wilds. No primeiro desses lançamentos, por volta de novembro de 2024, você poderá desafiar um novo ataque composto por três encontros. A história desses encontros estará acessível de duas maneiras: por meio de uma instância clássica de raid de 10 jogadores (nossa oitava raid) ou com grandes grupos em eventos de mundo aberto. O sistema de Convergências também será estendido à região de Janthir, incluindo inimigos específicos de Janthir.
+                </p>
+            </div>
+            <img class="new__image" src="./images/Encounter_02.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="new new--warclaw">
+        <div class="container" data-aos="flip-right">
+            <div class="new__details">
+                <h2 class="new__details__title">WARCLAW SELVAGENS</h2>
+                <p class="new__details__description">
+                    Guild Wars 2: Janthir Wilds apresenta a montaria warclaw com novas mecânicas. Anteriormente disponível apenas através de World vs. World, o warclaw será apresentado aos jogadores na história de Guild Wars 2: Janthir Wilds, incluindo novas habilidades para jogo PvE. Ao mesmo tempo, revisitaremos as habilidades WvW do warclaw para fornecer uma experiência renovada que se baseia no que aprendemos sobre montarias desde a primeira implementação do warclaw.
+                </p>
+            </div>
+            <img class="new__image" src="./images/Warclaw_01.jpg" alt="Front-end">
+        </div>
+    </section>
+    <section class="new new--rewards new--image-left">
+        <div class="container" data-aos="flip-left">
+            <div class="new__details">
+                <h2 class="new__details__title">RECOMPENSAS</h2>
+                <p class="new__details__description">
+                    O lançamento de Guild Wars 2: Janthir Wilds e cada um de seus principais lançamentos incluirão uma atualização sazonal do Wizard's Vault que apresenta novos objetivos e recompensas. No lançamento, os jogadores poderão trabalhar em busca de dois novos conjuntos de armaduras e armas, além de diversas outras recompensas cosméticas. Mais cosméticos estarão disponíveis nos próximos lançamentos principais, incluindo uma lança lendária e uma mochila lendária.
+                </p>
+            </div>
+            <img class="new__image" src="./images/WV_Rewards.jpg" alt="Front-end">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

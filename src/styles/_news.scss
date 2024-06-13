@@ -1,0 +1,99 @@
+@use "components";
+
+.new {
+    padding: 80px 0;
+
+    &--wild {
+        background-image: linear-gradient(components.$darkGreen, components.$red);
+
+        .new__details__title {
+            color: components.$titleWildReward;
+        }
+    }
+
+    &--home {
+        background-image: linear-gradient(components.$red, components.$darkBrown);
+
+        .new__details__title {
+            color: components.$titleHome;
+        }
+    }
+
+    &--spear {
+        background-image: linear-gradient(components.$darkBrown, components.$yellow);
+
+        .new__details__title {
+            color: components.$titleSpear;
+        }
+    }
+
+    &--encounter {
+        background-image: linear-gradient(components.$yellow, components.$darkBrown);
+
+        .new__details__title {
+            color: components.$titleEncounter;
+        }
+    }
+
+    &--warclaw {
+        background-image: linear-gradient(components.$darkBrown, components.$red);
+
+        .new__details__title {
+            color: components.$titleWarclaw;
+        }
+    }
+
+    &--rewards {
+        background-image: linear-gradient(components.$red, components.$darkGreen);
+
+        .new__details__title {
+            color: components.$titleWildReward;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__image {
+        max-width: 480px;
+        border-radius: 1vw;
+    }
+
+    &__details {
+        color: components.$textColor;
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+
+    &--image-left {
+        .container {
+        flex-direction: row-reverse;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__details {
+            margin-bottom: 16px;
+        }
+
+        &__image {
+            width: 100%;
+        }
+    }
+}
